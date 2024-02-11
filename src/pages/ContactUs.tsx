@@ -106,13 +106,15 @@ export function ContactForm() {
               <div className="flex gap-5">
                 <PhoneIcon className="h-6 w-6 text-white" />
                 <Typography variant="h6" color="white" className="mb-2">
-                  +91 86176 38628
+                  <a href="tel:+91 86176 38628">+91 86176 38628</a>
                 </Typography>
               </div>
               <div className="flex my-2 gap-5">
                 <EnvelopeIcon className="h-6 w-6 text-white" />
                 <Typography variant="h6" color="white" className="mb-2">
-                  messyprogrammer@gmail.com
+                  <a href="mailto:messyprogrammer@gmail.com">
+                    messyprogrammer@gmail.com
+                  </a>
                 </Typography>
               </div>
               <div className="flex mb-10 gap-5">
