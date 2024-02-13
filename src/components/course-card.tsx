@@ -48,7 +48,7 @@ export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
         <Typography className="mb-6 font-normal !text-gray-500">
           {desc}
         </Typography>
-        <Button variant="outlined">{label}</Button>
+        {/* <Button variant="outlined">{label}</Button> */}
       </CardBody>
     </Card>
   );

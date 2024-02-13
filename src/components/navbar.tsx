@@ -8,13 +8,14 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import {
-  RectangleStackIcon,
-  UserCircleIcon,
-  CommandLineIcon,
-  Squares2X2Icon,
+  // RectangleStackIcon,
+  // UserCircleIcon,
+  // CommandLineIcon,
+  // Squares2X2Icon,
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
+// import { mainLogo } from "../../public/image/logo.png";
 
 const NAV_MENU = [
   // {
@@ -77,9 +78,9 @@ export function Navbar() {
           className="z-50 mt-6 relative border-0 pr-3 py-3 pl-6"
         >
           <div className="flex items-center justify-between">
-            <Typography color="blue-gray" className="text-lg font-bold">
-              Messy Programmer
-            </Typography>
+            <img width={200} src="/image/fullLogo2.svg" alt="logo" />
+            {/* <Typography color="blue-gray" className="text-lg font-bold">
+            </Typography> */}
             <ul className="ml-10 hidden items-center gap-8 lg:flex">
               {NAV_MENU.map(({ name, icon: Icon, href }) => (
                 <NavItem key={name} href={href}>
@@ -89,7 +90,6 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              {/* <Button variant="text">Log in</Button> */}
               <a href="/#" target="_blank">
                 <Button color="gray">Let's Talk</Button>
               </a>

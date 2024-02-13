@@ -7,45 +7,59 @@ import React from "react";
 const COURSES = [
   {
     img: "/image/blogs/blog4.svg",
-    tag: "Beginner • 25 Classes • 200 Students",
-    title: "Unlock the Web Foundation",
-    label: "from $99",
-    desc: "Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
+    tag: "Simple landing pages to complex e-commerce platforms",
+    title: "Website Development",
+    // label: "from $99",
+    desc: "From simple landing pages to complex e-commerce platforms, we design and develop stunning websites that captivate your audience and drive results.",
   },
   {
     img: "/image/blogs/blog3.svg",
-    tag: "Medium • 10 Classes • 150 Students",
-    title: "Craft Websites That Adapt",
-    label: "from $199",
-    desc: "Our Responsive Design course teaches you the art of creating websites that seamlessly adapt to different devices and screen sizes.",
+    tag: "Custom web app development services",
+    title: "Web App Development",
+    // label: "from $199",
+    desc: " Harness the power of web technologies with our custom web app development services. We create intuitive and scalable web applications that streamline your business processes.",
   },
   {
     img: "/image/blogs/blog2.svg",
-    tag: "Medium • 23 Classes • 590 Students",
-    title: "Master the Power of React",
-    label: "from $499",
-    desc: "Take your frontend development to the next level with our React Development course. Learn how to build interactive, dynamic web applications.",
+    tag: "Custom internal business applications",
+    title: "Custom Internal Business Application Development",
+    // label: "from $499",
+    desc: "Boost efficiency and productivity with custom internal business applications tailored to your unique workflows and requirements.",
   },
   {
     img: "/image/blogs/blog5.svg",
-    tag: "Beginner • 35 Classes • 400 Students",
-    title: "Frontend Essentials Course",
-    label: "from $49",
-    desc: "For aspiring web developers, the Frontend Essentials course is a must. Dive into the core technologies - HTML, CSS, and JavaScript.",
+    tag: "Bespoke business automation tools",
+    title: "Business Automation Tool Development",
+    // label: "from $49",
+    desc: "Automate repetitive tasks and streamline operations with our bespoke business automation tools. Say goodbye to manual processes and hello to efficiency.",
   },
   {
     img: "/image/blogs/blog6.svg",
-    tag: "Medium • 10 Classes • 150 Students",
-    title: "Streamline Your CSS Workflow",
-    label: "from $99",
-    desc: "Our Tailwind CSS Introduction course teaches you how to use this utility-first CSS framework to streamline your workflow, saving you time.",
+    tag: "IOS or Android mobile applications",
+    title: "Mobile App Development",
+    // label: "from $99",
+    desc: "Reach your customers on the go with our mobile app development services. Whether iOS or Android, we build user-friendly and feature-rich mobile applications that enhance your brand presence.",
   },
   {
     img: "/image/blogs/blog4.svg",
-    tag: "Medium • 33 Classes • 690 Students",
-    title: "Master Backend Development",
-    label: "from $299",
-    desc: "Dream of becoming a backend developer? Our intensive one-month Node.js course is your fast track to achieving that goal.",
+    tag: "Business workflows",
+    title: "Business Workflow Design & Implementation",
+    // label: "from $299",
+    desc: "Optimize your business workflows for maximum efficiency and effectiveness. Our experts analyze your processes and design tailored solutions to drive growth.",
+  },
+  {
+    img: "/image/blogs/blog4.svg",
+    tag: "We provide skilled professionals to meet your needs",
+    title: "Dedicated Tech Team for Your Business",
+    // label: "from $299",
+    desc: "Scale your development team quickly and cost-effectively with our dedicated tech team services. From project management to coding, we provide skilled professionals to meet your needs.",
+  },
+  {
+    img: "/image/blogs/blog4.svg",
+    tag: "Choosing the right tech stack with us",
+    title: "Tech Consultancy",
+    // label: "from $299",
+    desc: "Leverage our expertise and industry insights to make informed technology decisions. Whether it's choosing the right tech stack or optimizing your IT infrastructure, we're here to help.",
   },
 ];
 
@@ -60,8 +74,7 @@ export function ExploreCourses() {
           variant="lead"
           className="mt-2 mx-auto w-full px-4 !text-gray-500 lg:w-6/12 lg:px-8"
         >
-          Browse through 1,000+ web development Services and find the one that
-          fits your needs.
+          Browse through 8+ Tech Services and find the one that fits your needs.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-24 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-14">

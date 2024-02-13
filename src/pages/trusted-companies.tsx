@@ -4,12 +4,12 @@ import React from "react";
 import { Typography } from "@material-tailwind/react";
 
 const COMPANIES = [
-  "coinbase",
-  "spotify",
-  "pinterest",
-  "google",
-  "amazon",
-  "netflix",
+  "Logo_Legal_Intake_Pros.webp",
+  "AKAY-LOGO.webp",
+  "TheStreamers.png",
+  "Dps.png",
+  "SaaSiest.png",
+  "DreamDesignLabs.png",
 ];
 
 function TrustedCompany() {
@@ -30,7 +30,7 @@ function TrustedCompany() {
               width={768}
               height={768}
               key={key}
-              src={`/logos/logo-${logo}.svg`}
+              src={`/logos/${logo}`}
               alt={logo}
               className="w-40 grayscale opacity-75"
             />

@@ -4,13 +4,11 @@ import React from "react";
 import { Button, Typography, Card, CardBody } from "@material-tailwind/react";
 
 import {
-  GlobeEuropeAfricaIcon,
-  MicrophoneIcon,
-  PuzzlePieceIcon,
   HeartIcon,
   BuildingOffice2Icon,
-  ArrowPathRoundedSquareIcon,
   DevicePhoneMobileIcon,
+  ArrowPathIcon,
+  ArrowTrendingUpIcon,
 } from "@heroicons/react/24/solid";
 
 import CategoryCard from "../components/cources-card";
@@ -19,19 +17,19 @@ const CATEGORIES = [
   {
     img: "/image/blogs/blog-3.png",
     icon: BuildingOffice2Icon,
-    title: "Custom Internal Business Application Development",
+    title: "Business Development",
     desc: "Boost efficiency and productivity with custom internal business applications tailored to your unique workflows and requirements.",
   },
   {
     img: "/image/blogs/blog-12.jpeg",
-    icon: ArrowPathRoundedSquareIcon,
-    title: "Business Automation Tool Development",
+    icon: ArrowPathIcon,
+    title: "Automation Tool",
     desc: "Automate repetitive tasks and streamline operations with our bespoke business automation tools. Say goodbye to manual processes and hello to efficiency.",
   },
   {
     img: "/image/blogs/blog-10.jpeg",
-    icon: DevicePhoneMobileIcon,
-    title: "Mobile App Development",
+    icon: ArrowTrendingUpIcon,
+    title: "Workflow Design",
     desc: "Reach your customers on the go with our mobile app development services. Whether iOS or Android, we build user-friendly and feature-rich mobile applications that enhance your brand presence.",
   },
   {

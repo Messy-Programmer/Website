@@ -40,30 +40,30 @@ function Hero() {
               <img
                 width={144}
                 height={144}
-                className="w-36 grayscale opacity-60"
-                src="/logos/logo-pinterest.svg"
-                alt="pinterest"
+                className=" ml-5 w-24 grayscale opacity-60 justify-center"
+                src="/logos/dps.png"
+                alt="dps"
               />
               <img
                 width={144}
                 height={144}
                 className="w-36 grayscale opacity-60"
-                src="/logos/logo-netflix.svg"
-                alt="netflix"
+                src="/logos/TheStreamers.png"
+                alt="TheStreamers"
               />
               <img
                 width={144}
                 height={144}
                 className="w-36 grayscale opacity-60"
-                src="/logos/logo-coinbase.svg"
-                alt="coinbase"
+                src="/logos/PolicyMakr.svg"
+                alt="PolicyMakr"
               />
               <img
                 width={144}
                 height={144}
                 className="w-36 grayscale opacity-60"
-                src="/logos/logo-google.svg"
-                alt="google"
+                src="/logos/Logo_Legal_Intake_Pros.webp"
+                alt="Legal_Intake_Pros"
               />
             </div>
           </Card>
