@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
+import { Typography, Card, CardBody } from "@material-tailwind/react";
 import React from "react";
 
 function TESTIMONIAL() {
@@ -19,15 +19,15 @@ function TESTIMONIAL() {
               />
             </div>
             <div className="col-span-2 w-full">
-              {/* <Typography variant="h6" color="blue" className="mb-4">
+              <Typography variant="h6" color="blue" className="mb-4">
                 Our Unique Selling Proposition (USP)
-              </Typography> */}
+              </Typography>
               <Typography
                 variant="h3"
                 color="blue-gray"
                 className="mb-4 font-bold"
               >
-                Our Unique Selling Proposition (USP)
+                Why choosing us?
               </Typography>
               <Typography className="mb-1 w-full font-normal !text-gray-500">
                 Quality IT services often come at a high cost, while low-cost
@@ -43,13 +43,13 @@ function TESTIMONIAL() {
                 <div className="flex items-center gap-2">
                   <span className="h-1 w-1 bg-gray-500 rounded-full" />
                   <Typography className="w-full font-normal !text-gray-500">
-                    International course collection in 10 languages
+                    Quality services
                   </Typography>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="h-1 w-1 bg-gray-500 rounded-full" />
                   <Typography className="w-full font-normal !text-gray-500">
-                    Certified include
+                    Fast delivery
                   </Typography>
                 </div>
               </div>

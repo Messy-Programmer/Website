@@ -48,8 +48,7 @@ export function CourcesCategories() {
           Services Categories
         </Typography>
         <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
-          A comprehensive selection of courses designed to empower you with the
-          skills you need to thrive in the dynamic world of web development.
+          Empowering excellence through exceptional services.
         </Typography>
       </div>
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -72,9 +71,11 @@ export function CourcesCategories() {
             >
               Leave the tech part on us!
             </Typography>
-            <Button size="sm" color="white">
-              Book Now
-            </Button>
+            <a href="/#contact">
+              <Button size="sm" color="white">
+                Book Now
+              </Button>
+            </a>
           </CardBody>
         </Card>
         <div className="col-span-1 flex flex-col gap-6">

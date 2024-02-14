@@ -4,7 +4,7 @@ import React from "react";
 import { Typography } from "@material-tailwind/react";
 
 const COMPANIES = [
-  "Logo_Legal_Intake_Pros.webp",
+  "TridentLogo.png",
   "AKAY-LOGO.webp",
   "TheStreamers.png",
   "Dps.png",
@@ -21,7 +21,7 @@ function TrustedCompany() {
             AWESOME COMMUNITY
           </Typography>
           <Typography variant="h2" color="blue-gray" className="mb-12">
-            Trusted by over 200+ Companies
+            Trusted by over 100+ Companies
           </Typography>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-10">

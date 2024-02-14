@@ -4,9 +4,9 @@ import React from "react";
 import { Typography } from "@material-tailwind/react";
 import {
   DocumentTextIcon,
-  PlayCircleIcon,
-  PencilSquareIcon,
+  StarIcon,
   PhoneArrowDownLeftIcon,
+  BoltIcon,
 } from "@heroicons/react/24/solid";
 
 import StatsCard from "../components/stats-card";
@@ -14,18 +14,18 @@ import StatsCard from "../components/stats-card";
 const STATS = [
   {
     icon: DocumentTextIcon,
-    count: "10,200+",
-    title: "Students",
+    count: "200+",
+    title: "Projects",
   },
   {
-    icon: PlayCircleIcon,
-    count: "50+",
-    title: "Instructors",
+    icon: StarIcon,
+    count: "95+",
+    title: "Reviews",
   },
   {
-    icon: PencilSquareIcon,
-    count: "10+",
-    title: "Courses",
+    icon: BoltIcon,
+    count: "8+",
+    title: "Services",
   },
   {
     icon: PhoneArrowDownLeftIcon,
@@ -37,7 +37,7 @@ const STATS = [
 export function OutImpressiveStats() {
   return (
     <section className="px-8 pt-60 mt-72 md:mt-52 ">
-      <div className="container mx-auto text-center lg:text-left">
+      <div className="container mx-auto text-center lg:text-left ">
         <div className="grid place-items-center text-center">
           <Typography variant="h2" color="blue-gray" className="mb-2 text-4xl">
             Explore Our Impressive Stats
@@ -47,7 +47,7 @@ export function OutImpressiveStats() {
             className="mx-auto mb-24 w-full !text-gray-500 lg:w-5/12"
           >
             We take pride in our commitment to excellence and our dedication to
-            your success.
+            our success.
           </Typography>
         </div>
         <div className="grid gap-y-16 gap-x-10 md:grid-cols-2 lg:grid-cols-4">

@@ -2,7 +2,7 @@
 
 import { Button, Typography, Card } from "@material-tailwind/react";
 import React from "react";
-import heroImage from "../../public/image/image8.png";
+import heroImage from "/public/image/image8.png";
 
 function Hero() {
   return (
@@ -31,10 +31,14 @@ function Hero() {
               to meet your business needs.
             </Typography>
             <div className="mb-8 flex justify-center gap-4 lg:justify-start">
-              <Button color="gray">view all courses</Button>
-              <Button color="gray" variant="outlined">
-                see pricing
-              </Button>
+              <a href="/#exploreServices">
+                <Button color="gray">view all the services</Button>
+              </a>
+              <a href="/#contact">
+                <Button color="gray" variant="outlined">
+                  contact us
+                </Button>
+              </a>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 items-center justify-between gap-4 lg:justify-start">
               <img
@@ -55,15 +59,15 @@ function Hero() {
                 width={144}
                 height={144}
                 className="w-36 grayscale opacity-60"
-                src="/logos/PolicyMakr.svg"
-                alt="PolicyMakr"
+                src="/logos/AdultFamilyHomes.png"
+                alt="Legal_Intake_Pros"
               />
               <img
                 width={144}
                 height={144}
                 className="w-36 grayscale opacity-60"
-                src="/logos/Logo_Legal_Intake_Pros.webp"
-                alt="Legal_Intake_Pros"
+                src="/logos/DreamDesignLabs.png"
+                alt="PolicyMakr"
               />
             </div>
           </Card>

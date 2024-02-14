@@ -35,10 +35,17 @@ const COURSES = [
   },
   {
     img: "/image/blogs/blog6.svg",
-    tag: "IOS or Android mobile applications",
+    tag: "IOS mobile applications",
     title: "Mobile App Development",
     // label: "from $99",
-    desc: "Reach your customers on the go with our mobile app development services. Whether iOS or Android, we build user-friendly and feature-rich mobile applications that enhance your brand presence.",
+    desc: "Elevate your productivity with our intuitive iOS app, designed to streamline your tasks and boost efficiency. Experience boundless entertainment options with our cutting-edge iOS app, offering effortless access to captivating content for endless enjoyment.",
+  },
+  {
+    img: "/image/blogs/blog6.svg",
+    tag: "Android mobile applications",
+    title: "Mobile App Development",
+    // label: "from $99",
+    desc: "Reach your customers on the go with our mobile app development services. We build user-friendly and feature-rich mobile applications that enhance your brand presence.",
   },
   {
     img: "/image/blogs/blog4.svg",
@@ -49,7 +56,7 @@ const COURSES = [
   },
   {
     img: "/image/blogs/blog4.svg",
-    tag: "We provide skilled professionals to meet your needs",
+    tag: "Skilled professionals to meet your needs",
     title: "Dedicated Tech Team for Your Business",
     // label: "from $299",
     desc: "Scale your development team quickly and cost-effectively with our dedicated tech team services. From project management to coding, we provide skilled professionals to meet your needs.",
@@ -65,7 +72,7 @@ const COURSES = [
 
 export function ExploreCourses() {
   return (
-    <section className="px-8">
+    <section className="px-8 pt-28" id="exploreServices">
       <div className="container mx-auto mb-24 text-center">
         <Typography variant="h2" color="blue-gray">
           Explore Services

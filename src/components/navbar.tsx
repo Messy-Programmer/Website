@@ -78,9 +78,9 @@ export function Navbar() {
           className="z-50 mt-6 relative border-0 pr-3 py-3 pl-6"
         >
           <div className="flex items-center justify-between">
-            <img width={200} src="/image/fullLogo2.svg" alt="logo" />
-            {/* <Typography color="blue-gray" className="text-lg font-bold">
-            </Typography> */}
+            <a href="/">
+              <img width={200} src="/image/fullLogo2.svg" alt="logo" />
+            </a>
             <ul className="ml-10 hidden items-center gap-8 lg:flex">
               {NAV_MENU.map(({ name, icon: Icon, href }) => (
                 <NavItem key={name} href={href}>
@@ -90,7 +90,7 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <a href="/#" target="_blank">
+              <a href="/#contact">
                 <Button color="gray">Let's Talk</Button>
               </a>
             </div>
@@ -117,13 +117,9 @@ export function Navbar() {
                   </NavItem>
                 ))}
               </ul>
-              <div className="mt-6 mb-4 flex items-center gap-4">
-                <Button variant="text">Log in</Button>
-                <a
-                  href="https://www.material-tailwind.com/blocks"
-                  target="_blank"
-                >
-                  <Button color="gray">blocks</Button>
+              <div className="flex  items-center justify-center gap-4">
+                <a href="/#contact">
+                  <Button color="gray">Let's Talk</Button>
                 </a>
               </div>
             </div>
