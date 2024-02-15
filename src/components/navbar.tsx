@@ -117,7 +117,7 @@ export function Navbar() {
                   </NavItem>
                 ))}
               </ul>
-              <div className="flex  items-center justify-center gap-4">
+              <div className="flex items-center justify-center gap-4">
                 <a href="/#contact">
                   <Button color="gray">Let's Talk</Button>
                 </a>

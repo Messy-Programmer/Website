@@ -2,7 +2,6 @@
 import React from "react";
 import FeedbackCard from "../components/feedback-card";
 import { Carousel, Typography } from "@material-tailwind/react";
-import { CarouselStylesType } from "@material-tailwind/react";
 
 const FEEDBACKS = [
   {
@@ -11,6 +10,17 @@ const FEEDBACKS = [
     client: "hollyopk",
     title: "Brazil",
     img: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/6c381f7f5636287b7446d72d9ba29fe9-1547489298164/f57638ef-dc76-48a2-9a3a-31c2f5a2bcec.jpg",
+    reviewLink:
+      "https://www.fiverr.com/sumanfiverr#:~:text=Almost%2010%20projects%20with%20Suman%20and%20he%20always%20delivered%20before%20the%20due%20date!",
+  },
+  {
+    feedback:
+      "So great. He did things, lots of people before told me, that it is not possible! Thank you!",
+    client: "derclaudio",
+    title: "Austria",
+    img: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/67a58bf236e03a66e921283e45e051ca-1617335978745/990b9103-ad60-4cf2-9387-4ef2e3f98bf8.jpeg",
+    reviewLink:
+      "https://www.fiverr.com/sumanfiverr#:~:text=So%20great.%20He%20did%20things%2C%20lots%20of%20people%20before%20told%20me%2C%20that%20it%20is%20not%20possible!%20Thank%20you!",
   },
   {
     feedback:
@@ -18,6 +28,8 @@ const FEEDBACKS = [
     client: "pyramking",
     title: " United States",
     img: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/14e6163c4b1e57da59311ba1a21afaf2-1576343010258/0dc44265-d60d-4953-aae3-c713ca6feac9.jpeg",
+    reviewLink:
+      "https://www.fiverr.com/sumanfiverr#:~:text=Suman%20was%20a%20game%2Dchanger!%20His%20ingenious%20solution%2C%20quick%20implementation%2C%20and%20creative%20thinking%20exceeded%20my%20expectations.",
   },
   {
     feedback:
@@ -25,6 +37,8 @@ const FEEDBACKS = [
     client: "bubucela",
     title: "Spain",
     img: "https://t3.ftcdn.net/jpg/03/64/62/36/360_F_364623623_ERzQYfO4HHHyawYkJ16tREsizLyvcaeg.jpg",
+    reviewLink:
+      "https://www.fiverr.com/sumanfiverr#:~:text=Really%20pleased%20to%20work%20with%20Suman.%20This%20is%20the%20second%20project%20and%20I%27m%20really%20happy%20with%20the%20work%20delivered.%20Fast%2C%20with%20knowledge%20about%20coding%2C%20and%20proactive.%20Will%20count%20with%20you%20whenever%20we%20can.%20Thanks%20for%20all%20the%20work%20done!",
   },
   {
     feedback:
@@ -32,6 +46,8 @@ const FEEDBACKS = [
     client: "felix_merkle",
     title: "Germany",
     img: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/56cd41cd7ad010d1001ec7a72e1841af-1688680989286/66389f78-58ed-4794-8026-6202995953c6.png",
+    reviewLink:
+      "https://www.fiverr.com/sumanfiverr#:~:text=Very%20cooperative%2C%20quick%20in%20response%20and%20quick%20in%20delivery.%20Fast%20and%20high%20quality%20work.%20Do%20not%20look%20anywhere%20else!",
   },
   {
     feedback:
@@ -39,6 +55,8 @@ const FEEDBACKS = [
     client: "lanmanhw",
     title: "United States",
     img: "https://t3.ftcdn.net/jpg/03/64/62/36/360_F_364623623_ERzQYfO4HHHyawYkJ16tREsizLyvcaeg.jpg",
+    reviewLink:
+      "https://www.fiverr.com/sumanfiverr#:~:text=It%20was%20a,highly%20recommend%20him!",
   },
   {
     feedback:
@@ -46,6 +64,8 @@ const FEEDBACKS = [
     client: "policymakr",
     title: "United States",
     img: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/932ac591a7ac44dbcb8f24d0be3b3c5b-1463021011677931109.1429281/BD29C452-14A5-4B18-A07D-E11AD82B0F84",
+    reviewLink:
+      "https://www.fiverr.com/sumanfiverr#:~:text=As%20always%2C%20Suman%20was%20reactive%2C%20quick%20to%20understand%20and%20adapt%20to%20our%20needs%20and%20also%20quick%20to%20deliver.",
   },
 ];
 
