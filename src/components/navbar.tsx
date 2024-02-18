@@ -7,15 +7,7 @@ import {
   IconButton,
   Typography,
 } from "@material-tailwind/react";
-import {
-  // RectangleStackIcon,
-  // UserCircleIcon,
-  // CommandLineIcon,
-  // Squares2X2Icon,
-  XMarkIcon,
-  Bars3Icon,
-} from "@heroicons/react/24/solid";
-// import { mainLogo } from "../../public/image/logo.png";
+import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
   // {

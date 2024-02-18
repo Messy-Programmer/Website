@@ -1,13 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Typography,
-  Card,
-  CardBody,
-  CardHeader,
-  Button,
-} from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import EventCard from "../components/event-card";
 
 const EVENTS = [

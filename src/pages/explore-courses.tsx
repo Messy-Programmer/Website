@@ -36,14 +36,14 @@ const COURSES = [
   {
     img: "/image/blogs/blog6.svg",
     tag: "IOS mobile applications",
-    title: "Mobile App Development",
+    title: "IOS Mobile App Development",
     // label: "from $99",
     desc: "Elevate your productivity with our intuitive iOS app, designed to streamline your tasks and boost efficiency. Experience boundless entertainment options with our cutting-edge iOS app, offering effortless access to captivating content for endless enjoyment.",
   },
   {
     img: "/image/blogs/blog6.svg",
     tag: "Android mobile applications",
-    title: "Mobile App Development",
+    title: "Android Mobile App Development",
     // label: "from $99",
     desc: "Reach your customers on the go with our mobile app development services. We build user-friendly and feature-rich mobile applications that enhance your brand presence.",
   },
