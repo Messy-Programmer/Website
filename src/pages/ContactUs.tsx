@@ -19,11 +19,14 @@ export function ContactForm() {
     email: "",
     message: "",
   });
-  const handleInput = (e: { target: { name: any; value: any } }) => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleInput = (e) => {
     const { name, value } = e.target;
     setFormvalue({ ...formvalue, [name]: value });
   };
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     const payload = {
@@ -42,8 +45,17 @@ export function ContactForm() {
         }
         return res.json();
       })
-      .then((res) => console.log(res))
-      .catch((error) => console.error("Error:", error));
+      .then(() => {
+        setSubmitted(true);
+        setFormvalue({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Error submitting form:", error);
+      });
   };
 
   return (
@@ -105,16 +117,22 @@ export function ContactForm() {
                     className: "!min-w-full mb-10 md:mb-28",
                   }}
                 />
-                <div className="w-full flex justify-end">
-                  <Button
-                    className="w-full md:w-fit"
-                    type="submit"
-                    color="gray"
-                    size="md"
-                  >
-                    Send message
-                  </Button>
-                </div>
+                {!submitted ? (
+                  <div className="w-full flex justify-end">
+                    <Button
+                      className="w-full md:w-fit"
+                      type="submit"
+                      color="gray"
+                      size="md"
+                    >
+                      Send message
+                    </Button>
+                  </div>
+                ) : (
+                  <h3>
+                    Thank you for submitting, We will get back to you soon.
+                  </h3>
+                )}
               </form>
             </div>
             <div className="w-full rounded-lg h-full py-8 p-5 md:p-16 bg-gray-900">
