@@ -18,8 +18,10 @@ export function ContactForm() {
     name: "",
     email: "",
     message: "",
+    number: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   const handleInput = (e) => {
     const { name, value } = e.target;
@@ -28,9 +30,10 @@ export function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setSubmitting(true);
 
     const payload = {
-      text: `Name: ${formvalue.name}\nEmail: ${formvalue.email}\nHere is the message: ${formvalue.message}`,
+      text: `𝐍𝐚𝐦𝐞: ${formvalue.name}\n𝐄𝐦𝐚𝐢𝐥: ${formvalue.email}\n𝐍𝐮𝐦𝐛𝐞𝐫: ${formvalue.number}\n𝐌𝐞𝐬𝐬𝐚𝐠𝐞: ${formvalue.message}`,
     };
     fetch(url, {
       method: "POST",
@@ -51,10 +54,14 @@ export function ContactForm() {
           name: "",
           email: "",
           message: "",
+          number: "",
         });
       })
       .catch((error) => {
         console.error("Error submitting form:", error);
+      })
+      .finally(() => {
+        setSubmitting(false);
       });
   };
 
@@ -74,7 +81,7 @@ export function ContactForm() {
           <CardBody className="grid grid-cols-1 md:p-10 lg:grid-cols-2 md:gap-28">
             <div className="w-full mt-8 md:mt-0 md:px-10 h-full p-5">
               <form action="#" onSubmit={handleSubmit}>
-                <div className="mb-8 grid gap-4 lg:grid-cols-1">
+                <div className="mb-8 grid gap-4 lg:grid-cols-2">
                   {/* @ts-ignore */}
                   <Input
                     color="gray"
@@ -85,6 +92,20 @@ export function ContactForm() {
                     value={formvalue.name}
                     onChange={handleInput}
                     placeholder="eg. Lucas"
+                    required
+                    containerProps={{
+                      className: "!min-w-full mb-3 md:mb-0",
+                    }}
+                  />
+                  <Input
+                    color="gray"
+                    size="lg"
+                    variant="static"
+                    label="Phone Number"
+                    name="number"
+                    value={formvalue.number}
+                    onChange={handleInput}
+                    placeholder="eg. 900 000 0000"
                     containerProps={{
                       className: "!min-w-full mb-3 md:mb-0",
                     }}
@@ -99,7 +120,8 @@ export function ContactForm() {
                   name="email"
                   value={formvalue.email}
                   onChange={handleInput}
-                  placeholder="eg. lucas@mail.com"
+                  placeholder="eg. ayush@email.com"
+                  required
                   containerProps={{
                     className: "!min-w-full mb-8",
                   }}
@@ -113,6 +135,7 @@ export function ContactForm() {
                   name="message"
                   value={formvalue.message}
                   onChange={handleInput}
+                  required
                   containerProps={{
                     className: "!min-w-full mb-10 md:mb-28",
                   }}
@@ -120,6 +143,7 @@ export function ContactForm() {
                 {!submitted ? (
                   <div className="w-full flex justify-end">
                     <Button
+                      loading={submitting}
                       className="w-full md:w-fit"
                       type="submit"
                       color="gray"
