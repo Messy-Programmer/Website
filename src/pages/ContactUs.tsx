@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import {
   Button,
   Typography,
@@ -9,9 +9,43 @@ import {
   Input,
   Textarea,
 } from "@material-tailwind/react";
-import { PhoneIcon, EnvelopeIcon, HomeIcon } from "@heroicons/react/24/solid";
+import { EnvelopeIcon, HomeIcon } from "@heroicons/react/24/solid";
 
 export function ContactForm() {
+  const url =
+    "https://chat.googleapis.com/v1/spaces/AAAA7L5QnB4/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=sn1su9Y62ezUqHupQSoUqZXuql04_BGS3ju0m_fihR0";
+  const [formvalue, setFormvalue] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const handleInput = (e: { target: { name: any; value: any } }) => {
+    const { name, value } = e.target;
+    setFormvalue({ ...formvalue, [name]: value });
+  };
+  const handleSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+
+    const payload = {
+      text: `Name: ${formvalue.name}\nEmail: ${formvalue.email}\nHere is the message: ${formvalue.message}`,
+    };
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return res.json();
+      })
+      .then((res) => console.log(res))
+      .catch((error) => console.error("Error:", error));
+  };
+
   return (
     <section className="px-8 pt-20" id="contact">
       <div className="container mx-auto mb-5 md:mb-20 text-center">
@@ -27,30 +61,20 @@ export function ContactForm() {
         <Card shadow={true} className="border border-gray/50">
           <CardBody className="grid grid-cols-1 md:p-10 lg:grid-cols-2 md:gap-28">
             <div className="w-full mt-8 md:mt-0 md:px-10 h-full p-5">
-              <form action="#">
-                <div className="mb-8 grid gap-4 lg:grid-cols-2">
+              <form action="#" onSubmit={handleSubmit}>
+                <div className="mb-8 grid gap-4 lg:grid-cols-1">
                   {/* @ts-ignore */}
                   <Input
                     color="gray"
                     size="lg"
                     variant="static"
-                    label="First Name"
-                    name="first-name"
+                    label="Full Name"
+                    name="name"
+                    value={formvalue.name}
+                    onChange={handleInput}
                     placeholder="eg. Lucas"
                     containerProps={{
                       className: "!min-w-full mb-3 md:mb-0",
-                    }}
-                  />
-                  {/* @ts-ignore */}
-                  <Input
-                    color="gray"
-                    size="lg"
-                    variant="static"
-                    label="Last Name"
-                    name="last-name"
-                    placeholder="eg. Jones"
-                    containerProps={{
-                      className: "!min-w-full",
                     }}
                   />
                 </div>
@@ -60,7 +84,9 @@ export function ContactForm() {
                   size="lg"
                   variant="static"
                   label="Email"
-                  name="first-name"
+                  name="email"
+                  value={formvalue.email}
+                  onChange={handleInput}
                   placeholder="eg. lucas@mail.com"
                   containerProps={{
                     className: "!min-w-full mb-8",
@@ -72,7 +98,9 @@ export function ContactForm() {
                   size="lg"
                   variant="static"
                   label="Your Message"
-                  name="first-name"
+                  name="message"
+                  value={formvalue.message}
+                  onChange={handleInput}
                   containerProps={{
                     className: "!min-w-full mb-10 md:mb-28",
                   }}
