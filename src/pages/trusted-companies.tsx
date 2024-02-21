@@ -11,6 +11,14 @@ const COMPANIES = [
   "SaaSiest.png",
   "DreamDesignLabs.png",
 ];
+const LINKS = [
+  "https://tridentinfosol.com/",
+  "https://akay.ie/",
+  "https://streamers.at/",
+  "https://www.dpsjhansi.in/",
+  "https://saasiestjobs.com/",
+  "https://dreamdesignlabs.com/",
+];
 
 function TrustedCompany() {
   return (
@@ -26,14 +34,21 @@ function TrustedCompany() {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-10">
           {COMPANIES.map((logo, key) => (
-            <img
-              width={768}
-              height={768}
+            <a
               key={key}
-              src={`/logos/${logo}`}
-              alt={logo}
-              className="w-40 grayscale opacity-75"
-            />
+              href={LINKS[key]}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                width={768}
+                height={768}
+                key={key}
+                src={`/logos/${logo}`}
+                alt={logo}
+                className="w-40 grayscale opacity-75"
+              />
+            </a>
           ))}
         </div>
       </div>

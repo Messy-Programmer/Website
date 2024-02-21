@@ -36,7 +36,8 @@ export default IndexPage;
 export const Head: HeadFC = () => (
   <html>
     <head>
-      <title>Home Page</title>
+      <title>Messy Programmer</title>
+      <link rel="icon" type="image/x-icon" href="/image/OnlyLogo.svg" />
     </head>
   </html>
 );

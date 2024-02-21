@@ -41,34 +41,58 @@ function Hero() {
               </a>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 items-center justify-between gap-4 lg:justify-start">
-              <img
-                width={144}
-                height={144}
-                className=" ml-5 w-24 grayscale opacity-60 justify-center"
-                src="/logos/dps.png"
-                alt="dps"
-              />
-              <img
-                width={144}
-                height={144}
-                className="w-36 grayscale opacity-60"
-                src="/logos/TheStreamers.png"
-                alt="TheStreamers"
-              />
-              <img
-                width={144}
-                height={144}
-                className="w-36 grayscale opacity-60"
-                src="/logos/AdultFamilyHomes.png"
-                alt="Legal_Intake_Pros"
-              />
-              <img
-                width={144}
-                height={144}
-                className="w-36 grayscale opacity-60"
-                src="/logos/DreamDesignLabs.png"
-                alt="PolicyMakr"
-              />
+              <a
+                href="https://www.dpsjhansi.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  width={144}
+                  height={144}
+                  className=" ml-5 w-24 grayscale opacity-60 justify-center"
+                  src="/logos/dps.png"
+                  alt="dps"
+                />
+              </a>
+              <a
+                href="https://streamers.at/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  width={144}
+                  height={144}
+                  className="w-36 grayscale opacity-60"
+                  src="/logos/TheStreamers.png"
+                  alt="TheStreamers"
+                />
+              </a>
+              <a
+                href="https://adultfamilyhomes.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  width={144}
+                  height={144}
+                  className="w-36 grayscale opacity-60"
+                  src="/logos/AdultFamilyHomes.png"
+                  alt="AdultFamilyHomes"
+                />
+              </a>
+              <a
+                href="https://dreamdesignlabs.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  width={144}
+                  height={144}
+                  className="w-36 grayscale opacity-60"
+                  src="/logos/DreamDesignLabs.png"
+                  alt="DreamDesignLabs"
+                />
+              </a>
             </div>
           </Card>
         </div>

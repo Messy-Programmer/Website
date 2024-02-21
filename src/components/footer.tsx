@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="px-8 pt-24 pb-8">
       <div className="container max-w-6xl flex flex-col mx-auto">
         <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
-          <img width={65} src="/image/OnlyLogo.svg" alt="logo-ct" />
+          <img width={200} src="/image/fullLogo2.svg" alt="logo-ct" />
           <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
             <li>
               <Typography

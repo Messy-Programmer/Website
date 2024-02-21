@@ -91,7 +91,7 @@ export function ContactForm() {
                     name="name"
                     value={formvalue.name}
                     onChange={handleInput}
-                    placeholder="eg. Lucas"
+                    placeholder="eg. Ayush Paul"
                     required
                     containerProps={{
                       className: "!min-w-full mb-3 md:mb-0",
@@ -105,7 +105,7 @@ export function ContactForm() {
                     name="number"
                     value={formvalue.number}
                     onChange={handleInput}
-                    placeholder="eg. 900 000 0000"
+                    placeholder="eg. 989 492 9764"
                     containerProps={{
                       className: "!min-w-full mb-3 md:mb-0",
                     }}
