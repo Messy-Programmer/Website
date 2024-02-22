@@ -2,17 +2,17 @@
 
 import { Button, Typography, Card } from "@material-tailwind/react";
 import React from "react";
-import heroImage from "/public/image/image8.png";
+import heroImage from "/public/image/image8.webp";
 
 function Hero() {
   return (
     <div className="!flex h-[55vh] w-full items-center justify-between px-10">
       <img
-        width={1200}
-        height={1200}
+        width={200}
+        height={200}
         src={heroImage}
         alt="bg-img"
-        className="absolute inset-0 ml-auto w-[820px] h-[680px] rounded-bl-[100px] mt-16 object-cover object-center"
+        className="absolute inset-0 ml-auto w-[620px] h-[480px] rounded-bl-[100px] mt-44  object-cover object-center"
       />
       <div className="container mx-auto mt-28">
         <div className="grid grid-cols-12 text-center lg:text-left">

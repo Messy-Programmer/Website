@@ -6,7 +6,6 @@ import { Button, Typography, Card, CardBody } from "@material-tailwind/react";
 import {
   HeartIcon,
   BuildingOffice2Icon,
-  DevicePhoneMobileIcon,
   ArrowPathIcon,
   ArrowTrendingUpIcon,
 } from "@heroicons/react/24/solid";
