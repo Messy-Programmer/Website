@@ -6,7 +6,7 @@ import React from "react";
 
 const COURSES = [
   {
-    img: "blogs/webDev.webp",
+    img: "/image/blogs/webDev.webp",
     tag: "Simple landing pages to complex e-commerce platforms",
     title: "Website Development",
     // label: "from $99",
@@ -34,7 +34,7 @@ const COURSES = [
     desc: "Automate repetitive tasks and streamline operations with our bespoke business automation tools. Say goodbye to manual processes and hello to efficiency.",
   },
   {
-    img: "/image/blogs/iosApp.webp",
+    img: "/image/blogs/iosApp.png",
     tag: "IOS mobile applications",
     title: "IOS Mobile App Development",
     // label: "from $99",
