@@ -6,7 +6,7 @@ import React from "react";
 
 const COURSES = [
   {
-    img: "/image/blogs/webDev.webp",
+    img: "blogs/webDev.webp",
     tag: "Simple landing pages to complex e-commerce platforms",
     title: "Website Development",
     // label: "from $99",
