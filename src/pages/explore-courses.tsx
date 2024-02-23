@@ -34,7 +34,7 @@ const COURSES = [
     desc: "Automate repetitive tasks and streamline operations with our bespoke business automation tools. Say goodbye to manual processes and hello to efficiency.",
   },
   {
-    img: "/image/blogs/iosApp.png",
+    img: "/image/blogs/iosApp.webp",
     tag: "IOS mobile applications",
     title: "IOS Mobile App Development",
     // label: "from $99",

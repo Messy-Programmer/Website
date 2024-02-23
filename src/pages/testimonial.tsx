@@ -13,7 +13,7 @@ function TESTIMONIAL() {
               <img
                 width={768}
                 height={768}
-                src="/image/blogs/USP.png"
+                src="/image/USP.png"
                 alt="testimonial image"
                 className="w-full h-full scale-110 object-cover"
               />
