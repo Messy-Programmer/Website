@@ -9,7 +9,7 @@ function Hero() {
     <div className="!flex h-[55vh] w-full items-center justify-between px-10">
       <img
         width={200}
-        src="/image/image8.png"
+        src="/image/heroImage.webp"
         alt="bg-img"
         className="absolute inset-0 ml-auto w-[620px] h-[480px] rounded-bl-[100px] mt-44  object-cover object-center"
       />
