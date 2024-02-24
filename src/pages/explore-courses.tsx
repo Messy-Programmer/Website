@@ -13,7 +13,7 @@ const COURSES = [
     desc: "From simple landing pages to complex e-commerce platforms, we design and develop stunning websites that captivate your audience and drive results.",
   },
   {
-    img: "/image/blogs/webApplication.png",
+    img: "/image/blogs/webApplication.webp",
     tag: "Custom web app development services",
     title: "Web App Development",
     // label: "from $199",
