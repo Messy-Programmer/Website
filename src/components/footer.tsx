@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container max-w-6xl flex flex-col mx-auto">
         <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
           <img width={200} src="/image/fullLogo2.svg" alt="logo-ct" />
-          <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+          <ul className="flex flex-wrap items-center gap-y-2 gap-x-8 justify-center">
             <li>
               <Typography
                 as="a"

@@ -11,7 +11,7 @@ function Hero() {
         width={200}
         src="/image/heroImage.webp"
         alt="bg-img"
-        className="absolute inset-0 ml-auto w-[620px] h-[480px] rounded-bl-[100px] mt-44  object-cover object-center"
+        className="absolute inset-2.5  xl:left-2/4 w-[620px] h-[480px] rounded-b-[100px] mt-44 object-cover object-center"
       />
       <div className="container mx-auto mt-28">
         <div className="grid grid-cols-12 text-center lg:text-left">
@@ -21,7 +21,7 @@ function Hero() {
               color="blue-gray"
               className="lg:text-5xl !leading-snug text-3xl lg:max-w-xl"
             >
-              Where Inovation Meets Your Business
+              Your Success Story, Our Tech Expertise
             </Typography>
             <Typography variant="lead" className="mb-10 mt-6 !text-gray-900">
               Messy Programmer is your trusted partner for top-notch IT services

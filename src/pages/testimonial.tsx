@@ -2,6 +2,7 @@
 
 import { Typography, Card, CardBody } from "@material-tailwind/react";
 import React from "react";
+import { StarIcon } from "@heroicons/react/24/outline";
 
 function TESTIMONIAL() {
   return (
@@ -41,14 +42,14 @@ function TESTIMONIAL() {
               </Typography>
               <div className="grid mb-4">
                 <div className="flex items-center gap-2">
-                  <span className="h-1 w-1 bg-gray-500 rounded-full" />
-                  <Typography className="w-full font-normal !text-gray-500">
+                  <Typography className="w-full font-normal !text-gray-500 flex gap-2">
+                    <StarIcon className="h-6 w-6 text-gray-500" />
                     Quality services
                   </Typography>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="h-1 w-1 bg-gray-500 rounded-full" />
-                  <Typography className="w-full font-normal !text-gray-500">
+                  <Typography className="w-full font-normal !text-gray-500 flex gap-2">
+                    <StarIcon className="h-6 w-6 text-gray-500" />
                     Fast delivery
                   </Typography>
                 </div>
