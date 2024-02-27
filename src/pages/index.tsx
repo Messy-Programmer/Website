@@ -4,7 +4,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import { ThemeProvider } from "@material-tailwind/react";
 import { Footer, Navbar } from "../components";
 import Hero from "./hero";
-import OutImpressiveStats from "./out-impressive-stats";
+// import OutImpressiveStats from "./out-impressive-stats";
 import CourcesCategories from "./courses-categories";
 import ExploreCourses from "./explore-courses";
 import Testimonial from "./testimonial";
@@ -12,13 +12,15 @@ import Testimonial from "./testimonial";
 import StudentsFeedback from "./students-feedback";
 import TrustedCompany from "./trusted-companies";
 import ContactForm from "./ContactUs";
+import OutImpressive from "./OutImpressive";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <ThemeProvider>
       <Navbar />
       <Hero />
-      <OutImpressiveStats />
+      {/* <OutImpressiveStats /> */}
+      <OutImpressive />
       <CourcesCategories />
       <ExploreCourses />
       <Testimonial />
